@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-300 font-mono">
+    <!--navbar-->
+    <div class="w-full bg-zinc-900 p-8">
+        <ul class="text-gray-300 no-underline flex flex-row space-x-4 justify-center text-lg font-bold">
+            <li><a class="hover:text-gray-500" href="#home">Home</a></li>
+            <li><a class="hover:text-gray-500" href="#chisono">Chi sono</a></li>
+            <li><a class="hover:text-gray-500" href="#contattami">Contattami</a></li>
+        </ul>
+    </div>
+    <!--home-->
+    <div id="home" class="m-20 flex flex-row justify-between h-screen">
+        <div class="m-auto text-center">
+            <h1 class="text-6xl font-extrabold">Ciao, sono Ludovico!</h1>
+            <p class="mt-6 underline">Frontend Developer e IT Consultant</p>
+            <button class="bg-zinc-900 text-gray-300 p-2 rounded-lg mt-6">
+                <p class="hover:text-gray-500">Contattami</p>
+            </button>
+        </div>
+        <div class="m-auto">
+            <img class="rounded-xl" src="img/ludovico.JPG" alt="Ludovico Maggio" height="600" width="400">
+        </div>
+    </div>
+    <!--chi sono-->
+    <div id="chisono" class="relative flex py-5 items-center">
+        <div class="flex-grow border-t border-zinc-900"></div>
+        <span class="flex-shrink mx-4 text-zinc-900 font-bold">Chi sono</span>
+        <div class="flex-grow border-t border-zinc-900"></div>
+    </div>
+    <div class="text-center m-20 h-screen">
+        <div class="p-8">
+        <h1 class="text-4xl font-extrabold">Parlo di me...</h1>
+        <p class="mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vulputate faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quis facilisis ligula, sed placerat nulla. Curabitur suscipit ligula at erat blandit, quis tincidunt turpis ullamcorper. Nullam rhoncus, turpis vel porta venenatis, nibh erat rutrum magna, a placerat ex dolor ac neque. In lacinia viverra ligula, eget pretium nulla sagittis sagittis. Quisque quis commodo lectus. Vestibulum feugiat ipsum sit amet lacus dapibus vehicula. Quisque at varius eros. Ut pellentesque sagittis nisl at varius. Ut eget cursus nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi non lectus nunc. Integer vulputate justo eros, nec lacinia purus interdum quis. Maecenas sed tempor purus. Proin laoreet consequat eleifend.</p>
+        </div>
+        <div class="mt-10 p-8">
+        <h1 class="text-4xl font-extrabold">Mi occupo di...</h1>
+        <p class="mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis vulputate faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quis facilisis ligula, sed placerat nulla. Curabitur suscipit ligula at erat blandit, quis tincidunt turpis ullamcorper. Nullam rhoncus, turpis vel porta venenatis, nibh erat rutrum magna, a placerat ex dolor ac neque. In lacinia viverra ligula, eget pretium nulla sagittis sagittis. Quisque quis commodo lectus. Vestibulum feugiat ipsum sit amet lacus dapibus vehicula. Quisque at varius eros. Ut pellentesque sagittis nisl at varius. Ut eget cursus nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi non lectus nunc. Integer vulputate justo eros, nec lacinia purus interdum quis. Maecenas sed tempor purus. Proin laoreet consequat eleifend.</p>
+        </div>
+    </div>
+    <!--contattami-->
+    <div id="contattami" class="relative flex py-5 items-center">
+        <div class="flex-grow border-t border-zinc-900"></div>
+        <span class="flex-shrink mx-4 text-zinc-900 font-bold">Contattami</span>
+        <div class="flex-grow border-t border-zinc-900"></div>
+    </div>
+    <section class="bg-white dark:bg-zinc-900">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-500">Contattami</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">Ti occorrono informazioni?</p>
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">E-mail</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-gray-300 focus:border-gray-300 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-300 dark:focus:border-gray-300 dark:shadow-sm-light" placeholder="nome@mail.com" required>
+                </div>
+                <div>
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Oggetto</label>
+                    <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-gray-300 focus:border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-300 dark:focus:border-gray-300 dark:shadow-sm-light" placeholder="Oggetto del messaggio" required>
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Messaggio</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-gray-300 focus:border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-300 dark:focus:border-gray-300" placeholder="Scrivi il messaggio..."></textarea>
+                </div>
+                <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-gray-700 sm:w-fit hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">Invia</button>
+            </form>
+        </div>
+      </section>
+    <!--footer-->
+    <footer class="w-full bg-zinc-900 p-8 text-center flex flex-row justify-center">
+        <div class="border-r-8 border-grey-300 p-5">
+        <p class="text-gray-300">&copy; Copyright 2023</p>
+        </div>
+        <div class="p-5">
+            <p class="text-gray-300">Ludovico Maggio</p>
+        </div>
+    </footer>
+
+</body>
+</html>
